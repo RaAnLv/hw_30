@@ -1,4 +1,5 @@
-from main.app import summ, delete, func
+from main.app import delete, func, summ
+
 
 def test_summ():
     result = summ(2, 5)
