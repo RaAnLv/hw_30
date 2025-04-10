@@ -1,0 +1,6 @@
+black == 24.3.0
+flake8 == 4.0.1
+flake8_bugbear == 22.12.6
+flake8_pie == 0.16.0
+isort == 5.13.2
+mypy == 0.991
