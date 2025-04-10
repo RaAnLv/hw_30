@@ -11,9 +11,18 @@ jobs:
       - name: Install
         run: |
           pip install -r ./main/requirements.txt
-      - name: Run a multi-line script
+      - name: Run flake8
+        run: |
+          flake8 ./main
+      - name: Run isort
+        run: |
+          isort --check-only ./main
+      - name: Run black
+        run: |
+          black --diff --check ./main
+      - name: Run mypy
         run: |
           mypy ./main
-          flake8 ./main
-          isort --check-only ./main
-          black --diff -check ./main
+          
+          
+          
