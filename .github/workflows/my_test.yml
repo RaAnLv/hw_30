@@ -11,7 +11,7 @@ jobs:
       - name: Run a multi-line script
         run: |
           pip install -r ./main/requirements.txt
-          black --diff -check .main/
-          mypy .main/
-          flake8 .main/
-          isort --check-only .main/
+          black --diff -check ./main
+          mypy ./main
+          flake8 ./main
+          isort --check-only ./main
