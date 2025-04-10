@@ -22,7 +22,7 @@ jobs:
           mypy ./main
       - name: Run flake8
         run: |
-          flake8 ./main
+          flake8 ../main
           
           
           
