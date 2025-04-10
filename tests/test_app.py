@@ -13,3 +13,8 @@ def test_delete():
 def test_func():
     result = func(2, 1)
     assert 1 == result
+
+
+def test_summ_2():
+    result = summ(2, 2)
+    assert 5 != result
