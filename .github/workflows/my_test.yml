@@ -13,7 +13,7 @@ jobs:
           pip install -r ./main/requirements.txt
       - name: Run a multi-line script
         run: |
-          black --diff -check ./main
           mypy ./main
           flake8 ./main
           isort --check-only ./main
+          black --diff -check ./main
