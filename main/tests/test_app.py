@@ -1,4 +1,4 @@
-from main.app import delete, func, summ
+from app import delete, func, summ
 
 
 def test_summ():
