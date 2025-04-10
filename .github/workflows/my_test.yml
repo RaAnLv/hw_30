@@ -1,0 +1,17 @@
+name: CI
+on:
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run a multi-line script
+        run: |
+          pip install -r ./main/requirements.txt
+          black --diff -check .main/
+          mypy .main/
+          flake8 .main/
+          isort --check-only .main/
