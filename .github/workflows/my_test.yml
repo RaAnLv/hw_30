@@ -11,9 +11,6 @@ jobs:
       - name: Install
         run: |
           pip install -r ./main/requirements.txt
-      - name: Run flake8
-        run: |
-          flake8 ./main
       - name: Run isort
         run: |
           isort --check-only ./main
@@ -23,6 +20,9 @@ jobs:
       - name: Run mypy
         run: |
           mypy ./main
+      - name: Run flake8
+        run: |
+          flake8 ./main
           
           
           
