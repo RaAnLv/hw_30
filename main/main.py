@@ -4,7 +4,6 @@ import models
 import schemas
 from database import engine, session
 from fastapi import FastAPI, Request
-from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from sqlalchemy.future import select
@@ -54,5 +53,6 @@ async def all_books(request: Request) -> List[models.CookingBook]:
     res = await session.execute(select(models.CookingBook))
     cook_books = res.scalars().all()
     return templates.TemplateResponse(
-        name="index.html", context={"request": request, "cook_books": cook_books}
+        name="index.html", context={"request": request,
+                                    "cook_books": cook_books}
     )

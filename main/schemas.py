@@ -8,7 +8,8 @@ class BaseBook(BaseModel):
     description: str
 
 
-class BookIn(BaseBook): ...
+class BookIn(BaseBook):
+    pass
 
 
 class BookOut(BaseBook):
