@@ -1,6 +1,6 @@
-from sqlalchemy import Column, String, Integer
-
 from database import Base
+from sqlalchemy import Column, Integer, String
+
 
 class CookingBook(Base):
     __tablename__ = 'CookingBook'

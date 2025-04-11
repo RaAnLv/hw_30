@@ -1,15 +1,13 @@
 from typing import List
 
-from fastapi import FastAPI, Request
-from sqlalchemy.future import select
-
-from fastapi.responses import HTMLResponse
-from fastapi.staticfiles import StaticFiles
-from fastapi.templating import Jinja2Templates
-
 import models
 import schemas
 from database import engine, session
+from fastapi import FastAPI, Request
+from fastapi.responses import HTMLResponse
+from fastapi.staticfiles import StaticFiles
+from fastapi.templating import Jinja2Templates
+from sqlalchemy.future import select
 
 app = FastAPI()
 
