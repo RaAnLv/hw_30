@@ -3,7 +3,7 @@ from sqlalchemy import Column, Integer, String
 
 
 class CookingBook(Base):
-    __tablename__ = 'CookingBook'
+    __tablename__ = "CookingBook"
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String, index=True)
     product_list = Column(String, index=True)

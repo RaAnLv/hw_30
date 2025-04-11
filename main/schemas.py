@@ -7,8 +7,9 @@ class BaseBook(BaseModel):
     time_cook: str
     description: str
 
-class BookIn(BaseBook):
-    ...
+
+class BookIn(BaseBook): ...
+
 
 class BookOut(BaseBook):
     id: int
