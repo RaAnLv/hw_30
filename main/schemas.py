@@ -17,3 +17,4 @@ class BookOut(BaseBook):
 
     class Config:
         orm_mode = True
+

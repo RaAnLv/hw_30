@@ -10,3 +10,4 @@ class CookingBook(Base):
     time_cook = Column(String, index=True)
     description = Column(String, index=True)
     count = Column(Integer, index=True, default=1)
+

@@ -56,4 +56,3 @@ async def all_books(request: Request) -> List[models.CookingBook]:
     return templates.TemplateResponse(
         name="index.html", context={"request": request, "cook_books": cook_books}
     )
-    # return res.scalars().all()
