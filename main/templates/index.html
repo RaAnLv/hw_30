@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Cook Book:</h1>
+<table class="customTable">
+    <thead>
+    <tr>
+        <th>Название</th>
+        <th>Время готовки</th>
+        <th>Количество просмотров</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for book in cook_books %}
+    <tr>
+        <td>
+            <a href="/recipes/{{book.id}}"> {{ book.name }}</a>
+        </td>
+        <td>
+            {{ book.time_cook }}
+        </td>
+        <td>
+            {{ book.count }}
+        </td>>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
+
