@@ -53,6 +53,9 @@ async def all_books(request: Request) -> List[models.CookingBook]:
     res = await session.execute(select(models.CookingBook))
     cook_books = res.scalars().all()
     return templates.TemplateResponse(
-        name="index.html", context={"request": request,
-                                    "cook_books": cook_books}
+        name="index.html",
+        context={
+            "request": request,
+            "cook_books": cook_books,
+        },
     )
