@@ -4,3 +4,6 @@ flake8_bugbear == 24.12.12
 flake8_pie == 0.16.0
 isort == 5.13.2
 mypy == 0.991
+pydantic == 2.11.3
+sqlalchemy == 2.0.40
+fastapi == 0.115.12
